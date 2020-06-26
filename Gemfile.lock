@@ -197,7 +197,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     swagger-docs (0.2.9)
       activesupport (>= 3)
       rails (>= 3)
@@ -244,7 +243,6 @@ DEPENDENCIES
   shoulda-matchers
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
   swagger-docs
   tzinfo-data
   validates_email_format_of
