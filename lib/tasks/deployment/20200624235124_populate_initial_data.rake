@@ -13,21 +13,21 @@ namespace :after_party do
       end
 
     ActiveRecord::Base.transaction do
-      (1..10).each do |_index|
+      (1..100).each do |_index|
         City.create(
           name: Faker::Address.city,
           state: Faker::Address.state_abbr
         )
       end
 
-      (1..10).each do |_index|
+      (1..100).each do |_index|
         Company.create(
           name: Faker::Company.name,
           city: City.order(random_command).first
         )
       end
 
-      (1..100).each do |_index|
+      (1..10_000).each do |_index|
         Person.create(
           name: Faker::Name.name,
           email: Faker::Internet.email,

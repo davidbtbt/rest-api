@@ -66,6 +66,7 @@ GEM
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 14.0)
     api-pagination (4.8.2)
+    awesome_print (1.8.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     bootsnap (1.4.6)
@@ -225,6 +226,7 @@ DEPENDENCIES
   after_party
   annotate
   api-pagination
+  awesome_print
   bootsnap (>= 1.4.2)
   byebug
   database_cleaner-active_record

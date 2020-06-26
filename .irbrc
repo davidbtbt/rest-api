@@ -1,0 +1,2 @@
+
+IRB.conf[:IRB_NAME]=ENV['RAILS_ENV']

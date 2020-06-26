@@ -23,7 +23,7 @@ class Company < ApplicationRecord
 
   belongs_to :city
   # If the company caves down, keep the people alive
-  has_many :people, dependent: :delete_all
+  has_many :people, dependent: :nullify
 
   validates :name, presence: true
   validates :city, presence: true
