@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  api_version(module: 'V1', path: { value: 'v1' }) do
+    resources :cities, only: :index
+    resources :companies, only: :index
+    resources :people, only: %i[index show]
+  end
 
   get '/api' => redirect('/apidocs/index.html?url=/apidocs/api-docs.json')
 end

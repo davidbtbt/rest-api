@@ -19,16 +19,26 @@ gem 'puma', '~> 4.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'active_model_serializers'
+gem 'after_party'
+gem 'api-pagination'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'pg'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 gem 'swagger-docs'
+gem 'validates_email_format_of'
+gem 'versionist'
+gem 'will_paginate'
 
 group :development, :test do
+  gem 'annotate'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'faker'
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
@@ -40,7 +50,7 @@ end
 group :test do
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
-  gem 'faker'
+  gem 'shoulda-matchers'
 end
 
 group :development do
