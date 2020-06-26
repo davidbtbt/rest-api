@@ -16,7 +16,7 @@ RSpec.describe 'V1::PeopleSerializer' do
     json = serializer.as_json
     aggregate_failures 'json response' do
       expect(json.keys.size).to eq(5)
-      expect(json[:id]).to eq(1)
+      expect(json[:id]).to eq(person.id)
       expect(json[:name]).to eq('David')
       expect(json[:email]).to eq('david@example.com')
       expect(json[:city]).to_not be_nil

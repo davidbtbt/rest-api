@@ -9,7 +9,7 @@ RSpec.describe 'V1::CitySerializer' do
     json = serializer.as_json
     aggregate_failures 'json response' do
       expect(json.keys.size).to eq(3)
-      expect(json[:id]).to eq(1)
+      expect(json[:id]).to eq(city.id)
       expect(json[:name]).to eq('Seattle')
       expect(json[:state]).to eq('WA')
     end

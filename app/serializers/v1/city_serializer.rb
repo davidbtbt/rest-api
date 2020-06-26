@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+#,,l frozen_string_literal: true
 
 module V1
   class CitySerializer < ActiveModel::Serializer

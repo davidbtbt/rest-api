@@ -11,7 +11,7 @@ RSpec.describe 'V1::CompanySerializer' do
     json = serializer.as_json
     aggregate_failures 'json response' do
       expect(json.keys.size).to eq(3)
-      expect(json[:id]).to eq(1)
+      expect(json[:id]).to eq(company.id)
       expect(json[:name]).to eq('DavidCorp')
       expect(json[:city]).to_not be_nil
     end
