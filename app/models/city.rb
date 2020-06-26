@@ -4,7 +4,7 @@
 #
 # Table name: cities
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  name       :string
 #  state      :string(2)
 #  created_at :datetime         not null

@@ -4,7 +4,7 @@
 #
 # Table name: people
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  email      :string
 #  name       :string
 #  created_at :datetime         not null
@@ -16,6 +16,12 @@
 #
 #  index_people_on_city_id     (city_id)
 #  index_people_on_company_id  (company_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (city_id => cities.id)
+#  fk_rails_...  (company_id => companies.id)
+#
 
 class Person < ApplicationRecord
   belongs_to :city
